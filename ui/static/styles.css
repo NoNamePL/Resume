@@ -1,0 +1,50 @@
+a {
+    text-decoration: underline;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+}
+
+.main {
+    padding: 0;
+}
+
+section.resume-section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.social_icons .social_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
