@@ -1,16 +1,20 @@
-.main {
-    display: flex;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     padding-top: 0;
     padding-left: 17rem;
     margin: 0;
-    font-size: 1rem;
-    font-weight: 400px;
-    line-height: 1.5;
-    background-color: rgb(255, 255, 255);    
 }
 
+a {
+    text-decoration: underline;
+}
 
-nav {
+/*nav*/
+
+.navbar {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -20,50 +24,164 @@ nav {
     display: flex;
     flex-direction: column;
     width: 17rem;
-    height: 100vh;
-    flex-wrap: nowrap;
-    justify-content: flex-start;   
-    border:solid 2px #495057;
+    height: 100vh;    
+    background-color: rgb(35, 129, 35);
 }
 
-a {
-    text-decoration: underline;
+.navbar-photo-link{
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+}
+
+.nav-span-photo {
+    display: block;
+}
+
+.nav_photo {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid 2px rgb(36, 148, 36);
+    background-color: rgb(36, 148, 36);
+}
+
+.navbarResponseive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 0;
+    flex-basis: 0;
+    width: 100%;
+    margin-bottom: auto;
+    
+}
+
+.navbar-nav {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: rgba(255,255,255,0.55);
+    
+}
+
+.nav-item {
+    display: block;
+    text-align: center;
+    
+}
+
+.nav-link{
+    display: block;
+    font-weight: 800;
+    padding: 1rem 0;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    
+}
+
+.nav-link:hover {
+    color: rgb(112, 190, 112);
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+/*main content*/
+
+.main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    font-weight: 400px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);    
 }
 
 
 .resume-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 75rem;
+    /*align-items: center;*/
+    max-height: 75rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    border:solid 2px red;
+    border-bottom: solid 1px rgb(129, 124, 124);
+    
+}
+
+.resume-section h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.resume-section h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .subheading {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 3rem;
-    
+    text-transform: uppercase;
+}
+
+.subheading a {
+    color : rgb(35, 129, 35);
 }
 
 .lead {
     font-size: 1.15rem;
     font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 1.7em;
 }
-
+/*about*/
 .social_icons .social_icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: #495057;
+    background-color: rgb(27, 88, 27);
     color: #fff;
     border-radius: 100%;
     font-size: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.social_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/*skills*/
+
+.programming_tools {
+    padding-left: 0;
+}
+
+.list-inline-item {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.workflow {
+    margin-bottom: 1rem;
 }
